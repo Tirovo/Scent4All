@@ -27,7 +27,7 @@
 
 ## 📁 Project Structure
 
-'''
+```
 Scent4All/
 ├── app/                         # Source code
 │   ├── app.py                   # Streamlit UI logic
@@ -46,7 +46,7 @@ Scent4All/
 ├── .gitignore
 ├── README.md
 └── LICENSE
-'''
+```
 
 ## 🌟 License
 
