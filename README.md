@@ -27,21 +27,26 @@
 
 ## 📁 Project Structure
 
+'''
 Scent4All/
-├── app/ # Streamlit app interface (e.g. UI logic)
-│ ├── app.py # Streamlit app
-├── data/ # Input dataset (.csv)
-├── src/ # Core recommendation code
-│ ├── recommender.py # Main recommendation pipeline
-│ ├── data_loader.py # CSV loading function
-│ ├── features.py # TF-IDF feature generation
-│ ├── similarities.py # Cosine similarity calculation
-│ ├── utils.py # (Optional) clustering and helpers
-│ └── constants.py # Configuration constants
+├── app/                         # Source code
+│   ├── app.py                   # Streamlit UI logic
+├── src/                         # Source code                 
+│   ├── recommender.py           # End-to-end recommendation pipeline
+│   ├── features.py              # Feature extraction using TF-IDF
+│   ├── similarities.py          # Cosine similarity computation
+│   ├── data_loader.py           # CSV reader
+│   ├── utils.py                 # Clustering helpers
+│   └── constants.py             # Global constants
+├── data/
+│   └── perfumes_dataset.csv     # Cleaned dataset (Fragrantica-based)
+├── assets/
+│   └── main_img.png             # Visuals
+├── requirements.txt             # Python dependencies
 ├── .gitignore
-├── LICENSE
 ├── README.md
-└── requirements.txt # Python dependencies
+└── LICENSE
+'''
 
 ## 🌟 License
 
