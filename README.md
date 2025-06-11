@@ -2,7 +2,7 @@
 
 ## 🌸 Overview
 
-![Main Preview](assets/img/main.png)
+![Main Preview](assets/main_img.png)
 
 **Scent4All** is an open-source Python project that recommends perfumes based on olfactory similarity using scent notes and main accords. The app features a simple Streamlit interface and leverages cosine similarity between perfumes described in a structured dataset.
 
@@ -25,13 +25,24 @@
 5. **Query Matching**: Match input perfume name with fuzzy search.
 6. **Recommendation Output**: Display top N similar perfumes via Streamlit.
 
-## 📊 Example Recommendation Output
-
-| Perfume       | Brand        | Accords              | Notes (Top/Mid/Base)     | Rating |
-| ------------- | ------------ | -------------------- | ------------------------ | ------ |
-| Y EDP         | YSL          | fresh, spicy, woody  | bergamot, ginger, sage   | 4.3    |
-| Dylan Blue    | Versace      | citrus, aquatic, musky | grapefruit, incense, tonka | 4.2  |
-
 ## 📁 Project Structure
 
+Scent4All/
+├── app/ # Streamlit app interface (e.g. UI logic)
+│ ├── app.py # Streamlit app
+├── data/ # Input dataset (.csv)
+├── src/ # Core recommendation code
+│ ├── recommender.py # Main recommendation pipeline
+│ ├── data_loader.py # CSV loading function
+│ ├── features.py # TF-IDF feature generation
+│ ├── similarities.py # Cosine similarity calculation
+│ ├── utils.py # (Optional) clustering and helpers
+│ └── constants.py # Configuration constants
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt # Python dependencies
 
+## 🌟 License
+
+This project is open-source. Feel free to use, modify, and contribute! 🚀
